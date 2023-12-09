@@ -52,7 +52,7 @@ body {
 }
 
 .container {
-  max-width: 320px;
+  max-width: 318px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -101,8 +101,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .page-header {
-    padding-top: 17.5px;
-    padding-bottom: 17.5px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .mobile-menu-open-btn {
@@ -246,7 +246,7 @@ body {
   background-size: cover;
   background-position: center;
   margin: 0 auto;
-  max-width: 767px;
+  max-width: 320px;
 }
 
 @media screen and (min-resolution: 192dpi),
@@ -393,7 +393,7 @@ body {
       ),
       url(/images/people-office/people-office-tablet.jpg);
     padding: 112px 0;
-    max-width: 1158px;
+    max-width: 767px;
   }
 
   @media screen and (min-resolution: 192dpi),
