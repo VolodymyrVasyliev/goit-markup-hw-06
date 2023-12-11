@@ -334,6 +334,9 @@ body {
 }
 
 /* ========== OUR TEAM MOBILE =========== */
+.team-container {
+  width: 296px;
+}
 
 .team-section {
   padding: 96px 0;
@@ -410,6 +413,59 @@ body {
 .social-box-team:focus,
 .social-box-team:hover {
   background-color: #404bbf;
+}
+
+/* ============== OUR PORTFOLIO MOBILE ============== */
+
+.portfolio-section {
+  padding: 96px 0;
+}
+
+.portfolio-title {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+}
+
+.overlay {
+  display: none;
+}
+
+.app-name {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.portfolio-card-title {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.portfolio-text {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 @media screen and (min-width: 768px) {
@@ -548,7 +604,7 @@ body {
   }
 
   /* ========== OUR TEAM TABLET =========== */
-  .team-comtainer {
+  .team-container {
     width: 584px;
   }
 
@@ -562,6 +618,19 @@ body {
   .team-item {
     flex-basis: calc((100% - 24px) / 2);
   }
+
+  /* ============== OUR PORTFOLIO TABLET ============== */
+
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
   /* ============== /TABLET STYLES ============== */
 }
 @media screen and (min-width: 1158px) {
@@ -651,9 +720,26 @@ body {
 
   /* ============== DESKTOP OUR TEAM  ============== */
 
-.team-comtainer{
-  width: 1158px;
+  .team-container {
+    width: 1158px;
+  }
+/* ============== DESKTOP TABLET ============== */
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
+.portfolio-list {
+  justify-content: center;
+  row-gap: 48px;
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.app-name{
+  
+}
   /* ============== /DESKTOP  STYLES ============== */
 }
