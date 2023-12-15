@@ -132,13 +132,20 @@ body {
   }
 
   .mobile-menu-container {
+    padding-top: 72px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+    padding-left: 16px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .mobile-menu-close-btn {
     position: absolute;
     top: 24px;
-    right: 8px;
+    right: 24px;
     width: 24px;
     height: 24px;
     display: flex;
@@ -164,7 +171,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-top: 72px;
   }
 
   .mobile-menu-link {
@@ -178,6 +184,10 @@ body {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .menu-studio {
+    color: #404bbf;
+  }
+
   .mobile-menu-link:hover,
   .mobile-menu-link:focus,
   .mobile-menu-link:active {
@@ -188,7 +198,13 @@ body {
     display: flex;
     gap: 24px;
     flex-direction: column;
-    margin-top: 168px;
+  }
+
+  .mobile-adress-box {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: auto;
   }
 
   .mobile-contacts-list {
@@ -199,6 +215,7 @@ body {
     color: #434455;
     font-family: Roboto;
     font-size: 20px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -214,7 +231,6 @@ body {
   .mobile-social-list {
     display: flex;
     gap: 40px;
-    margin-top: 40px;
   }
 
   .mobile-social-link {
@@ -509,7 +525,10 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 16px;
+  }
+
+  .footer-box-logo {
+    margin-bottom: 72px;
   }
 
   .social-text-footer {
@@ -537,6 +556,9 @@ body {
     height: 40px;
     background-color: #4d5ae5;
     border-radius: 50%;
+  }
+
+  .social-footer-container {
     margin-bottom: 72px;
   }
 
@@ -741,17 +763,16 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review-form-textarea-wrapper{
+.review-form-textarea-wrapper {
   margin-bottom: 16px;
 }
-
 
 .review-form-checkbox:checked
   + .review-form-checkbox-label
   > .review-form-own-checkbox {
   background-color: #404bbf;
   border: #404bbf;
-  fill:#F4F4FD;
+  fill: #f4f4fd;
 }
 
 .review-form-checkbox:focus
@@ -773,7 +794,6 @@ body {
 .accent-color {
   color: #4d5ae5;
 }
-
 
 .review-form-checkbox-label {
   color: #8e8f99;
@@ -806,7 +826,6 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 @media screen and (min-width: 768px) {
   .container {
@@ -976,7 +995,7 @@ body {
 
   @media screen and (max-width: 1158px) {
     .footer-container {
-      width: 584px;
+      max-width: 584px;
       display: flex;
       flex-wrap: wrap;
       row-gap: 72px;
@@ -1097,13 +1116,12 @@ body {
     border: none;
   }
 
-/* ============== MODAL WINDOW TABLET ============== */
+  /* ============== MODAL WINDOW TABLET ============== */
 
-.modal{
-  width:408px;
-  min-height: 584px;
-}
-
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
 
   /* ============== /TABLET STYLES ============== */
 }
@@ -1270,6 +1288,7 @@ body {
   .footer-container {
     display: flex;
     align-items: baseline;
+    flex-wrap: nowrap;
   }
 
   .footer-section {
@@ -1338,43 +1357,41 @@ body {
 
   /* ============== MODAL WINDOW DESKTOP ============== */
 
-.modal{
-  width: 408px;
-}
+  .modal {
+    width: 408px;
+  }
 
-.modal-close-button:hover,
-.modal-close-button:focus {
-  fill: #ffffff;
-  background-color: #404bbf;
-  border: none;
-}
+  .modal-close-button:hover,
+  .modal-close-button:focus {
+    fill: #ffffff;
+    background-color: #404bbf;
+    border: none;
+  }
 
-.modal-close-button-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .modal-close-button-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.review-form-input-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .review-form-input-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.review-form-input:focus {
-  border-color: #4d5ae5;
-}
+  .review-form-input:focus {
+    border-color: #4d5ae5;
+  }
 
-.review-form-input:focus + .review-form-input-icon {
-  fill: #4d5ae5;
-}
+  .review-form-input:focus + .review-form-input-icon {
+    fill: #4d5ae5;
+  }
 
-.review-form-comment:focus {
-  border-color: #4d5ae5;
-}
+  .review-form-comment:focus {
+    border-color: #4d5ae5;
+  }
 
+  .review-form-submit-button:focus,
+  .review-form-submit-button:hover {
+    background-color: #404bbf;
+  }
 
-.review-form-submit-button:focus,
-.review-form-submit-button:hover {
-  background-color: #404bbf;
-}
-
-
-   /* ============== /DESKTOP  STYLES ============== */
+  /* ============== /DESKTOP  STYLES ============== */
 }
