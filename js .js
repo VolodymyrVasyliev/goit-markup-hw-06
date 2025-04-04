@@ -5,18 +5,27 @@ const buttonMobile = document.querySelector(".mobile-menu-close-btn");
 buttonMobile.addEventListener("click", handleClickMobile);
 
 function handleClickMobile(event) {
-  console.log("puch button");
-  mobile.classList.remove("is-open");
+  console.log("puch buttonMobile");
+
+  mobile.classList.toggle("is-open");
 }
 
 // modal menu
 const modal = document.querySelector(".backdrop");
-const bottonModal = document.querySelector(".modal-close-button");
+const bottonCloseModal = document.querySelector(".modal-close-button");
+const buttonOpenModal = document.querySelector("[data-action='open-modal']");
 
-bottonModal.addEventListener("click", handleClickModale);
+bottonCloseModal.addEventListener("click", handleClickModaleClose);
+buttonOpenModal.addEventListener("click",handleOpenModal)
 
-function handleClickModale(event) {
-  console.log(event);
+function handleOpenModal(event) {
+  console.log('puch button open modal');
+  modal.classList.add("is-open")
+  
+}
+
+function handleClickModaleClose(event) {
+  console.log("puch button close modal");
 
   modal.classList.remove("is-open");
 }
